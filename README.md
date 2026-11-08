@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/adigold/CST-Convertor/releases/latest/download/CST-to-Patch.zip"><b>Download for Mac</b></a><br>
-  macOS 13 or later, Apple silicon and Intel
+  <a href="https://github.com/adigold/CST-Convertor/releases/latest/download/CST-to-Patch.zip"><img src="https://img.shields.io/badge/Download_for_Mac-FF8C28?style=for-the-badge&logo=apple&logoColor=white" height="48" alt="Download for Mac"></a><br>
+  Free. macOS 13 or later, Apple silicon and Intel.
 </p>
 
 <p align="center">
