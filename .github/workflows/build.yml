@@ -5,6 +5,11 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -14,8 +19,14 @@ jobs:
       - name: Build app
         run: ./build.sh
       - name: Zip app
-        run: ditto -c -k --keepParent "dist/CST to Patch.app" "dist/CST-to-Patch-unsigned.zip"
+        run: ditto -c -k --keepParent "dist/CST to Patch.app" "dist/CST-to-Patch.zip"
       - uses: actions/upload-artifact@v4
         with:
-          name: CST-to-Patch-unsigned
-          path: dist/CST-to-Patch-unsigned.zip
+          name: CST-to-Patch
+          path: dist/CST-to-Patch.zip
+      # When you publish a release on GitHub, the app zip is attached to it automatically.
+      - name: Attach app to release
+        if: github.event_name == 'release'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "${{ github.event.release.tag_name }}" dist/CST-to-Patch.zip --clobber

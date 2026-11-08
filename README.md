@@ -10,6 +10,11 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/adigold/CST-Convertor/releases/latest/download/CST-to-Patch.zip"><b>Download for Mac</b></a><br>
+  macOS 13 or later, Apple silicon and Intel
+</p>
+
+<p align="center">
   Created and powered by <a href="https://agsoundtrax.com">AGsoundtrax LLC</a>
 </p>
 
@@ -43,22 +48,26 @@ Real-world test: 811 `.cst` presets in 35 folders converted in under two minutes
 
 ### Download
 
-1. Open the [Actions tab](../../actions) of this repository and click the latest green "Build" run.
-2. Scroll to "Artifacts" and download `CST-to-Patch-unsigned`.
-3. Unzip it and drag `CST to Patch.app` into your Applications folder.
+**[Download CST to Patch for Mac](https://github.com/adigold/CST-Convertor/releases/latest/download/CST-to-Patch.zip)**
 
-The download from GitHub is not notarized. The first time you open it, macOS blocks it. To open it:
+1. Click the link above. Your browser downloads `CST-to-Patch.zip`.
+2. Double-click the zip to unzip it.
+3. Drag `CST to Patch` into your Applications folder.
+4. Open the app.
 
-1. Right-click the app and choose Open.
-2. Click Open in the dialog.
+If macOS says it can't open the app:
 
-If macOS still refuses, open Terminal and run:
+1. Open System Settings and go to Privacy & Security.
+2. Scroll down. Next to the message about "CST to Patch", click Open Anyway.
+3. Confirm with your password or Touch ID.
+
+You only do this once. Or run this in Terminal:
 
 ```bash
 xattr -dr com.apple.quarantine "/Applications/CST to Patch.app"
 ```
 
-You can also build the app yourself. See [Build from source](#build-from-source).
+All versions are on the [Releases page](https://github.com/adigold/CST-Convertor/releases). You can also build the app yourself. See [Build from source](#build-from-source).
 
 ### Convert your presets
 
@@ -206,7 +215,7 @@ CST-Convertor/
 ## Troubleshooting
 
 **"CST to Patch can't be opened because Apple cannot check it"**
-You downloaded the unsigned build. Right-click the app, choose Open, then click Open. Or run the `xattr` command from the Download section.
+Open System Settings, go to Privacy & Security, and click Open Anyway next to the message about CST to Patch. Or run the `xattr` command from the Download section.
 
 **The app says "No .cst presets found"**
 Check the Step 1 folder. Logic keeps presets in `~/Music/Audio Music Apps/Channel Strip Settings/Instrument`. The `Music` folder is in your home folder.
