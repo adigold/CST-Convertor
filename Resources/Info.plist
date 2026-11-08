@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key><string>CST to Patch</string>
+	<key>CFBundleDisplayName</key><string>CST to Patch</string>
+	<key>CFBundleIdentifier</key><string>com.agsoundtrax.csttopatch</string>
+	<key>CFBundleExecutable</key><string>CSTtoPatch</string>
+	<key>CFBundleIconFile</key><string>AppIcon</string>
+	<key>CFBundlePackageType</key><string>APPL</string>
+	<key>CFBundleShortVersionString</key><string>1.1</string>
+	<key>CFBundleVersion</key><string>2</string>
+	<key>LSMinimumSystemVersion</key><string>13.0</string>
+	<key>LSApplicationCategoryType</key><string>public.app-category.music</string>
+	<key>NSHumanReadableCopyright</key><string>Created and powered by AGsoundtrax LLC. © 2026 AGsoundtrax LLC. All rights reserved.</string>
+	<key>NSHighResolutionCapable</key><true/>
+	<key>NSPrincipalClass</key><string>NSApplication</string>
+</dict>
+</plist>
